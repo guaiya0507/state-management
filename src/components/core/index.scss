@@ -1,0 +1,13 @@
+.dabbie-button {
+  display: inline-block;
+  margin: .25em .45em;
+  padding: .15em 1.75em;
+  border: 1px solid yellowgreen;
+  background: honeydew;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background:#d7f3dd;
+  }
+}

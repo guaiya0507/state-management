@@ -1,0 +1,74 @@
+.user {
+  cursor: pointer;
+  text-decoration: none;
+
+  .user-avatar {
+    border-radius: 1.25em;
+  }
+
+  .user-name {
+    vertical-align: .55em;
+    padding-left: .45em;
+    font-size: 1.25em;
+    color: cadetblue;
+  }
+
+  &:hover {
+    .user-name {
+      color: brown;
+      text-decoration: underline;
+    }
+  }
+}
+
+.albums {
+  flex: 1;
+}
+.album {
+  font-family: 'Comic Sans MS';
+  color: #444;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  padding: .5em 1em .5em 2em;
+
+  .album-item {
+    position: relative;
+    list-style: none;
+    font-size: .65em;
+    padding: .25em;
+
+    b {
+      font-size: 1em;
+      margin-right: .25em;
+      color: slategray;
+      font-family: monospace;
+    }
+  }
+
+  .select {
+    position: absolute;
+    right: 0;
+    color: brown;
+    font-size: 1.15em;
+    padding-right: 2.5em;
+    cursor: pointer;
+
+    &:hover {
+      color: green;
+      font-weight: bold;
+    }
+  }
+  .selected {
+    color: green;
+
+    &:hover {
+      color: brown;
+    }
+  }
+}
+
+.album-selected {
+  background-color: #eceae7;
+}
+
+
