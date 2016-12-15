@@ -1,3 +1,4 @@
+import 'whatwg-fetch'
 import { EventEmitter } from 'events'
 
 import AppDispatcher from '@flux/dispatcher/AppDispatcher'
@@ -39,7 +40,6 @@ const UnsplashStore = Object.assign({}, EventEmitter.prototype, {
 
 AppDispatcher.register(function (payload) {
   const action = payload.action
-  console.log('%cACTION', 'color: cadetblue', action)
   switch(action.type) {
     case AppConstants.UNSPLASH_FRESH: {
       fetchAlbums()
