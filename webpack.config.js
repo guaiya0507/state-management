@@ -29,7 +29,7 @@ module.exports = {
   entry: {
     flux: './src/flux/main.js',
     //redux: './src/redux/main.js',
-    //mobx: './src/mobx/main.js',
+    mobx: './src/mobx/main.js',
     //rtjs: './src/rtjs/main.js',
   },
   output: {
@@ -44,6 +44,7 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           presets: ['latest', 'react', 'stage-0'],
+          plugins: ['transform-decorators-legacy'],
         }
       },
       {
