@@ -17,3 +17,9 @@ class DataStore {
 
 const dataStore = new DataStore()
 dataStore.name = 'lyons'
+
+
+const userInfo = observable({name: 'hell0'})
+autorun(() => console.log(userInfo))
+
+userInfo.name = 'solome'
